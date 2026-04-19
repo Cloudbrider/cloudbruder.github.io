@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Life-Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a; /* Dunkelblaues Design */
+            color: #f1f5f9;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 { color: #38bdf8; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #334155;
+        }
+        .card h2 { border-bottom: 2px solid #38bdf8; padding-bottom: 10px; margin-top: 0; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; padding: 5px 0; border-bottom: 1px solid #334155; }
+    </style>
+</head>
+<body>
+
+    <h1>Willkommen in deinem Hauptquartier</h1>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Uni-Abgaben</h2>
+            <ul>
+                <li>📝 Hausarbeit: 15.05.</li>
+                <li>📊 Projektpräsentation: 22.05.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Stundenplan / Kalender</h2>
+            <p>Hier betten wir später deinen Google Kalender ein.</p>
+            <div style="background: #334155; height: 150px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                [Kalender-Vorschau]
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>KI-Assistent & Finanzen</h2>
+            <p>Status: Bereit für Peter Claw...</p>
+        </div>
+    </div>
+
+</body>
+</html>
